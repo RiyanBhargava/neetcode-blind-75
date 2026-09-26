@@ -1,7 +1,7 @@
 # Best Time to Buy and Sell Stock
 
-| | |
-|---|---|
+|  |  |
+| --- | --- |
 | **LeetCode** | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
 | **Difficulty** | Easy |
 | **Primary pattern** | One Pass / Running Minimum |
@@ -25,4 +25,3 @@ Given daily stock prices, choose one day to buy and a later day to sell so that 
 ```
 
 > Read the [official problem statement](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) for the authoritative wording, complete examples, and judge details.
-
