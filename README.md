@@ -1,62 +1,129 @@
-# LeetCode Practice
+# NeetCode Blind 75
 
-50 generic LeetCode questions organized by topic and sequenced from foundational Easy patterns to high-value Medium techniques for AI engineering interviews and implementation work.
+Solve in the order below.
 
-## Recommended study phases
+## Arrays & Hashing
 
-1. **Foundations (1-18):** Build fluency with arrays, hashing, two-pointer primitives, stacks, binary search, linked lists, trees, bit operations, greedy scanning, and matrix basics.
-2. **Core patterns (19-35):** Practice sliding windows, heaps, intervals, graph traversal, backtracking, tries, and stateful data structures; write the invariant before coding.
-3. **AI-engineering depth (36-50):** Consolidate dynamic programming, graph modeling, matrix transformations, caching, weighted sampling, and scalable sequence/string techniques. Re-solve missed problems without notes.
+1. [Contains Duplicate](01_arrays_and_hashing/0217_contains_duplicate/question.md)
+2. [Valid Anagram](01_arrays_and_hashing/0242_valid_anagram/question.md)
+3. [Two Sum](01_arrays_and_hashing/0001_two_sum/question.md)
+4. [Group Anagrams](01_arrays_and_hashing/0049_group_anagrams/question.md)
+5. [Top K Frequent Elements](01_arrays_and_hashing/0347_top_k_frequent_elements/question.md)
+6. [Encode and Decode Strings](01_arrays_and_hashing/0271_encode_and_decode_strings/question.md)
+7. [Product of Array Except Self](01_arrays_and_hashing/0238_product_of_array_except_self/question.md)
+8. [Longest Consecutive Sequence](01_arrays_and_hashing/0128_longest_consecutive_sequence/question.md)
 
-| # | Problem | Difficulty | Topic |
-|---:|---|---|---|
-| 1 | [0001. Two Sum](./01-arrays-hashing/0001-two-sum/question.md) | Easy | arrays-hashing |
-| 2 | [0013. Roman to Integer](./01-arrays-hashing/0013-roman-to-integer/question.md) | Easy | arrays-hashing |
-| 3 | [0020. Valid Parentheses](./04-stack/0020-valid-parentheses/question.md) | Easy | stack |
-| 4 | [0035. Search Insert Position](./05-binary-search/0035-search-insert-position/question.md) | Easy | binary-search |
-| 5 | [0053. Maximum Subarray](./11-greedy/0053-maximum-subarray/question.md) | Easy | greedy |
-| 6 | [0069. Sqrt(x)](./05-binary-search/0069-sqrtx/question.md) | Easy | binary-search |
-| 7 | [0088. Merge Sorted Array](./01-arrays-hashing/0088-merge-sorted-array/question.md) | Easy | arrays-hashing |
-| 8 | [0094. Binary Tree Inorder Traversal](./07-trees/0094-binary-tree-inorder-traversal/question.md) | Easy | trees |
-| 9 | [0104. Maximum Depth of Binary Tree](./07-trees/0104-maximum-depth-of-binary-tree/question.md) | Easy | trees |
-| 10 | [0121. Best Time to Buy and Sell Stock](./01-arrays-hashing/0121-best-time-to-buy-and-sell-stock/question.md) | Easy | arrays-hashing |
-| 11 | [0136. Single Number](./17-bit-manipulation/0136-single-number/question.md) | Easy | bit-manipulation |
-| 12 | [0141. Linked List Cycle](./06-linked-list/0141-linked-list-cycle/question.md) | Easy | linked-list |
-| 13 | [0169. Majority Element](./01-arrays-hashing/0169-majority-element/question.md) | Easy | arrays-hashing |
-| 14 | [0206. Reverse Linked List](./06-linked-list/0206-reverse-linked-list/question.md) | Easy | linked-list |
-| 15 | [0217. Contains Duplicate](./01-arrays-hashing/0217-contains-duplicate/question.md) | Easy | arrays-hashing |
-| 16 | [0242. Valid Anagram](./01-arrays-hashing/0242-valid-anagram/question.md) | Easy | arrays-hashing |
-| 17 | [0566. Reshape the Matrix](./20-matrix/0566-reshape-the-matrix/question.md) | Easy | matrix |
-| 18 | [0704. Binary Search](./05-binary-search/0704-binary-search/question.md) | Easy | binary-search |
-| 19 | [0003. Longest Substring Without Repeating Characters](./03-sliding-window/0003-longest-substring-without-repeating-characters/question.md) | Medium | sliding-window |
-| 20 | [0011. Container With Most Water](./02-two-pointers/0011-container-with-most-water/question.md) | Medium | two-pointers |
-| 21 | [0015. 3Sum](./02-two-pointers/0015-3sum/question.md) | Medium | two-pointers |
-| 22 | [0019. Remove Nth Node From End of List](./06-linked-list/0019-remove-nth-node-from-end-of-list/question.md) | Medium | linked-list |
-| 23 | [0033. Search in Rotated Sorted Array](./05-binary-search/0033-search-in-rotated-sorted-array/question.md) | Medium | binary-search |
-| 24 | [0046. Permutations](./16-backtracking/0046-permutations/question.md) | Medium | backtracking |
-| 25 | [0048. Rotate Image](./20-matrix/0048-rotate-image/question.md) | Medium | matrix |
-| 26 | [0049. Group Anagrams](./01-arrays-hashing/0049-group-anagrams/question.md) | Medium | arrays-hashing |
-| 27 | [0056. Merge Intervals](./10-intervals/0056-merge-intervals/question.md) | Medium | intervals |
-| 28 | [0072. Edit Distance](./15-2d-dp/0072-edit-distance/question.md) | Medium | 2d-dp |
-| 29 | [0074. Search a 2D Matrix](./05-binary-search/0074-search-a-2d-matrix/question.md) | Medium | binary-search |
-| 30 | [0078. Subsets](./16-backtracking/0078-subsets/question.md) | Medium | backtracking |
-| 31 | [0098. Validate Binary Search Tree](./07-trees/0098-validate-binary-search-tree/question.md) | Medium | trees |
-| 32 | [0102. Binary Tree Level Order Traversal](./07-trees/0102-binary-tree-level-order-traversal/question.md) | Medium | trees |
-| 33 | [0105. Construct Binary Tree from Preorder and Inorder Traversal](./07-trees/0105-construct-binary-tree-from-preorder-and-inorder-traversal/question.md) | Medium | trees |
-| 34 | [0128. Longest Consecutive Sequence](./01-arrays-hashing/0128-longest-consecutive-sequence/question.md) | Medium | arrays-hashing |
-| 35 | [0139. Word Break](./14-1d-dp/0139-word-break/question.md) | Medium | 1d-dp |
-| 36 | [0146. LRU Cache](./19-design/0146-lru-cache/question.md) | Medium | design |
-| 37 | [0150. Evaluate Reverse Polish Notation](./04-stack/0150-evaluate-reverse-polish-notation/question.md) | Medium | stack |
-| 38 | [0198. House Robber](./14-1d-dp/0198-house-robber/question.md) | Medium | 1d-dp |
-| 39 | [0200. Number of Islands](./12-graphs/0200-number-of-islands/question.md) | Medium | graphs |
-| 40 | [0207. Course Schedule](./12-graphs/0207-course-schedule/question.md) | Medium | graphs |
-| 41 | [0208. Implement Trie (Prefix Tree)](./08-trie/0208-implement-trie/question.md) | Medium | trie |
-| 42 | [0215. Kth Largest Element in an Array](./09-heap-priority-queue/0215-kth-largest-element-in-an-array/question.md) | Medium | heap-priority-queue |
-| 43 | [0221. Maximal Square](./15-2d-dp/0221-maximal-square/question.md) | Medium | 2d-dp |
-| 44 | [0238. Product of Array Except Self](./01-arrays-hashing/0238-product-of-array-except-self/question.md) | Medium | arrays-hashing |
-| 45 | [0300. Longest Increasing Subsequence](./14-1d-dp/0300-longest-increasing-subsequence/question.md) | Medium | 1d-dp |
-| 46 | [0322. Coin Change](./14-1d-dp/0322-coin-change/question.md) | Medium | 1d-dp |
-| 47 | [0399. Evaluate Division](./13-advanced-graphs/0399-evaluate-division/question.md) | Medium | advanced-graphs |
-| 48 | [0424. Longest Repeating Character Replacement](./03-sliding-window/0424-longest-repeating-character-replacement/question.md) | Medium | sliding-window |
-| 49 | [0528. Random Pick with Weight](./19-design/0528-random-pick-with-weight/question.md) | Medium | design |
-| 50 | [0981. Time Based Key-Value Store](./19-design/0981-time-based-key-value-store/question.md) | Medium | design |
+## Two Pointers
+
+9. [Valid Palindrome](02_two_pointers/0125_valid_palindrome/question.md)
+10. [Container With Most Water](02_two_pointers/0011_container_with_most_water/question.md)
+11. [3Sum](02_two_pointers/0015_3sum/question.md)
+
+## Stack
+
+12. [Valid Parentheses](06_stack/0020_valid_parentheses/question.md)
+
+## Binary Search
+
+13. [Find Minimum In Rotated Sorted Array](04_binary_search/0153_find_minimum_in_rotated_sorted_array/question.md)
+14. [Search In Rotated Sorted Array](04_binary_search/0033_search_in_rotated_sorted_array/question.md)
+
+## Sliding Window
+
+15. [Best Time to Buy And Sell Stock](03_sliding_window/0121_best_time_to_buy_and_sell_stock/question.md)
+16. [Longest Substring Without Repeating Characters](03_sliding_window/0003_longest_substring_without_repeating_characters/question.md)
+17. [Longest Repeating Character Replacement](03_sliding_window/0424_longest_repeating_character_replacement/question.md)
+
+## Linked List
+
+18. [Reverse Linked List](05_linked_list/0206_reverse_linked_list/question.md)
+19. [Merge Two Sorted Lists](05_linked_list/0021_merge_two_sorted_lists/question.md)
+20. [Linked List Cycle](05_linked_list/0141_linked_list_cycle/question.md)
+21. [Remove Nth Node From End of List](05_linked_list/0019_remove_nth_node_from_end_of_list/question.md)
+22. [Reorder List](05_linked_list/0143_reorder_list/question.md)
+
+## Intervals
+
+23. [Meeting Rooms](16_intervals/0252_meeting_rooms/question.md)
+24. [Merge Intervals](16_intervals/0056_merge_intervals/question.md)
+25. [Insert Interval](16_intervals/0057_insert_interval/question.md)
+26. [Non Overlapping Intervals](16_intervals/0435_non_overlapping_intervals/question.md)
+27. [Meeting Rooms II](16_intervals/0253_meeting_rooms_ii/question.md)
+
+## Math & Geometry
+
+28. [Spiral Matrix](18_math_and_geometry/0054_spiral_matrix/question.md)
+29. [Rotate Image](18_math_and_geometry/0048_rotate_image/question.md)
+30. [Set Matrix Zeroes](18_math_and_geometry/0073_set_matrix_zeroes/question.md)
+
+## Bit Manipulation
+
+31. [Number of 1 Bits](17_bit_manipulation/0191_number_of_1_bits/question.md)
+32. [Counting Bits](17_bit_manipulation/0338_counting_bits/question.md)
+33. [Reverse Bits](17_bit_manipulation/0190_reverse_bits/question.md)
+34. [Missing Number](17_bit_manipulation/0268_missing_number/question.md)
+35. [Sum of Two Integers](17_bit_manipulation/0371_sum_of_two_integers/question.md)
+
+## Trees
+
+36. [Maximum Depth of Binary Tree](07_trees/0104_maximum_depth_of_binary_tree/question.md)
+37. [Invert Binary Tree](07_trees/0226_invert_binary_tree/question.md)
+38. [Same Tree](07_trees/0100_same_tree/question.md)
+39. [Subtree of Another Tree](07_trees/0572_subtree_of_another_tree/question.md)
+40. [Binary Tree Level Order Traversal](07_trees/0102_binary_tree_level_order_traversal/question.md)
+41. [Lowest Common Ancestor of a Binary Search Tree](07_trees/0235_lowest_common_ancestor_of_a_binary_search_tree/question.md)
+42. [Validate Binary Search Tree](07_trees/0098_validate_binary_search_tree/question.md)
+43. [Kth Smallest Element In a Bst](07_trees/0230_kth_smallest_element_in_a_bst/question.md)
+44. [Construct Binary Tree From Preorder And Inorder Traversal](07_trees/0105_construct_binary_tree_from_preorder_and_inorder_traversal/question.md)
+
+## Backtracking
+
+45. [Combination Sum](09_backtracking/0039_combination_sum/question.md)
+46. [Word Search](09_backtracking/0079_word_search/question.md)
+
+## Tries
+
+47. [Implement Trie Prefix Tree](08_tries/0208_implement_trie_prefix_tree/question.md)
+48. [Design Add And Search Words Data Structure](08_tries/0211_design_add_and_search_words_data_structure/question.md)
+
+## Graphs
+
+49. [Number of Islands](11_graphs/0200_number_of_islands/question.md)
+50. [Clone Graph](11_graphs/0133_clone_graph/question.md)
+51. [Pacific Atlantic Water Flow](11_graphs/0417_pacific_atlantic_water_flow/question.md)
+52. [Number of Connected Components In An Undirected Graph](11_graphs/0323_number_of_connected_components_in_an_undirected_graph/question.md)
+53. [Graph Valid Tree](11_graphs/0261_graph_valid_tree/question.md)
+54. [Course Schedule](11_graphs/0207_course_schedule/question.md)
+
+## Greedy
+
+55. [Maximum Subarray](15_greedy/0053_maximum_subarray/question.md)
+56. [Jump Game](15_greedy/0055_jump_game/question.md)
+
+## 1-D Dynamic Programming
+
+57. [Climbing Stairs](13_1d_dynamic_programming/0070_climbing_stairs/question.md)
+58. [House Robber](13_1d_dynamic_programming/0198_house_robber/question.md)
+59. [House Robber II](13_1d_dynamic_programming/0213_house_robber_ii/question.md)
+60. [Decode Ways](13_1d_dynamic_programming/0091_decode_ways/question.md)
+61. [Coin Change](13_1d_dynamic_programming/0322_coin_change/question.md)
+62. [Word Break](13_1d_dynamic_programming/0139_word_break/question.md)
+63. [Longest Increasing Subsequence](13_1d_dynamic_programming/0300_longest_increasing_subsequence/question.md)
+64. [Longest Palindromic Substring](13_1d_dynamic_programming/0005_longest_palindromic_substring/question.md)
+65. [Palindromic Substrings](13_1d_dynamic_programming/0647_palindromic_substrings/question.md)
+66. [Maximum Product Subarray](13_1d_dynamic_programming/0152_maximum_product_subarray/question.md)
+
+## 2-D Dynamic Programming
+
+67. [Unique Paths](14_2d_dynamic_programming/0062_unique_paths/question.md)
+68. [Longest Common Subsequence](14_2d_dynamic_programming/1143_longest_common_subsequence/question.md)
+
+## Hard Problems
+
+69. [Minimum Window Substring](03_sliding_window/0076_minimum_window_substring/question.md)
+70. [Merge K Sorted Lists](05_linked_list/0023_merge_k_sorted_lists/question.md)
+71. [Find Median From Data Stream](10_heap_and_priority_queue/0295_find_median_from_data_stream/question.md)
+72. [Serialize And Deserialize Binary Tree](07_trees/0297_serialize_and_deserialize_binary_tree/question.md)
+73. [Binary Tree Maximum Path Sum](07_trees/0124_binary_tree_maximum_path_sum/question.md)
+74. [Word Search II](08_tries/0212_word_search_ii/question.md)
+75. [Alien Dictionary](12_advanced_graphs/0269_alien_dictionary/question.md)
